@@ -9,6 +9,10 @@ rule-providers:
 rules:
   - RULE-SET,自定义下载,下载流量
 
+# Optional icon URL for the policy group:
+#
+# icon: "https://cdn.jsdelivr.net/gh/othjya/edge-cache-policy@main/assets/edge.svg"
+#
 # Recommended order in your current config:
 #
 #   - RULE-SET,No-ads-all_域,广告拦截
