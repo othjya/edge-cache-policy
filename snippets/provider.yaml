@@ -11,7 +11,7 @@ rules:
 
 # Optional icon URL for the policy group:
 #
-# icon: "https://cdn.jsdelivr.net/gh/othjya/edge-cache-policy@main/assets/edge.svg"
+# icon: "https://cdn.jsdelivr.net/gh/othjya/edge-cache-policy@main/assets/edge.png"
 #
 # Recommended order in your current config:
 #

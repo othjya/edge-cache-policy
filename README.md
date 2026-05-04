@@ -13,7 +13,8 @@ https://raw.githubusercontent.com/othjya/edge-cache-policy/main/rules/assets.lis
 ## Layout
 
 - `rules/assets.list`: curated hostname rules.
-- `assets/edge.svg`: neutral edge/CDN policy icon.
+- `assets/edge.svg`: neutral edge/CDN policy icon source.
+- `assets/edge.png`: PNG icon for clients that do not render SVG icons.
 - `snippets/provider.yaml`: local integration snippet.
 - `.github/workflows/validate.yml`: basic syntax validation.
 
