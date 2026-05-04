@@ -1,0 +1,49 @@
+# NAME: EdgeAssets
+# AUTHOR: othjya
+# REPO: https://github.com/othjya/edge-cache-policy
+# UPDATED: 2026-05-04
+#
+# Purpose:
+# Route selected high-volume asset/CDN traffic to a dedicated policy group.
+# Keep this list conservative. Avoid broad keywords such as "download" or "update".
+
+# GitHub release artifacts and LFS/object downloads
+DOMAIN-SUFFIX,github-releases.githubusercontent.com
+DOMAIN-SUFFIX,objects.githubusercontent.com
+DOMAIN-SUFFIX,release-assets.githubusercontent.com
+DOMAIN-SUFFIX,github-registry-files.githubusercontent.com
+
+# Hugging Face model/dataset large-file delivery
+DOMAIN-SUFFIX,cdn-lfs.huggingface.co
+DOMAIN-SUFFIX,cdn-lfs-us-1.huggingface.co
+DOMAIN-SUFFIX,cdn-lfs-eu-1.huggingface.co
+DOMAIN-SUFFIX,cas-bridge.xethub.hf.co
+DOMAIN-SUFFIX,transfer.xethub.hf.co
+
+# Developer tool downloads
+DOMAIN-SUFFIX,download.jetbrains.com
+DOMAIN-SUFFIX,download-cdn.jetbrains.com
+DOMAIN-SUFFIX,cache-redirector.jetbrains.com
+DOMAIN-SUFFIX,download.visualstudio.microsoft.com
+DOMAIN-SUFFIX,download.microsoft.com
+DOMAIN-SUFFIX,download.pytorch.org
+DOMAIN-SUFFIX,files.pythonhosted.org
+DOMAIN-SUFFIX,repo.maven.apache.org
+DOMAIN-SUFFIX,services.gradle.org
+DOMAIN-SUFFIX,downloads.gradle.org
+DOMAIN-SUFFIX,registry.npmjs.org
+
+# OS and app update payloads
+DOMAIN-SUFFIX,download.windowsupdate.com
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+DOMAIN-SUFFIX,tlu.dl.delivery.mp.microsoft.com
+DOMAIN-SUFFIX,appldnld.apple.com
+DOMAIN-SUFFIX,swcdn.apple.com
+DOMAIN-SUFFIX,updates.cdn-apple.com
+DOMAIN-SUFFIX,dl.google.com
+DOMAIN-SUFFIX,edgedl.me.gvt1.com
+
+# Container/image downloads
+DOMAIN-SUFFIX,registry-1.docker.io
+DOMAIN-SUFFIX,production.cloudflare.docker.com
+DOMAIN-SUFFIX,ghcr.io

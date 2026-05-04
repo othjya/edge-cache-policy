@@ -1,0 +1,19 @@
+# Add this under rule-providers:
+rule-providers:
+  自定义下载:
+    <<: *Classical
+    path: ./rules/EdgeAssets.list
+    url: "https://raw.githubusercontent.com/othjya/edge-cache-policy/main/rules/assets.list"
+
+# Put this near the top of rules, after ad blocking and before app/service rules:
+rules:
+  - RULE-SET,自定义下载,下载流量
+
+# Recommended order in your current config:
+#
+#   - RULE-SET,No-ads-all_域,广告拦截
+#   - RULE-SET,自定义下载,下载流量
+#   - RULE-SET,Download_端/域,下载流量
+#   - RULE-SET,GameDownloadCN_域,🇨🇳 瓦洛兰大陆
+#   - RULE-SET,GameDownload_域,下载流量
+#   - PROCESS-PATH,com.ss.android.ugc.aweme,抖音
